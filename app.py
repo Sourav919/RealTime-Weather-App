@@ -25,7 +25,7 @@ def scrape_weather(city, country):
         
         # Return the extracted weather data as a dictionary
         return {
-            "temperature": temperature + "°C",
+            "temperature": (temperature-30)/2 + "°C",
             "weather_condition": weather_condition,
             "humidity": humidity,
             "wind_speed": wind_speed,
