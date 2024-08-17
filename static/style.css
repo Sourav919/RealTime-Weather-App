@@ -53,7 +53,7 @@ header h2 {
 }
 
 .container {
-    margin-top: 129px;
+    margin-top: 49px;
     background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
     padding: 20px;
     border-radius: 15px;
@@ -107,23 +107,51 @@ button:hover {
     margin: 10px 0;
     color: black; /* Color for the labels */
 }
+/* Social Icons Styling */
 .social-icons {
-    position: fixed; /* Fixes the container to the bottom */
-    bottom: 0; 
-    width: 100%; /* Takes full width */
-    display: flex; /* Use flexbox for alignment */
-    justify-content: center; /* Center horizontally */
-    padding: 10px 0; /* Optional: Add padding for spacing */
-    gap: 20px;
+    margin: 20px 0; /* Add margin to create space around the icons */
+    display: flex;
+    justify-content: center; /* Center the icons horizontally */
+    gap: 20px; /* Space between icons */
 }
 
+/* Optional: Customize the size of the icons */
 .social-icons a {
-    text-decoration: none;
-    color: #a6d2dd; /* Change to your preferred color */
-    font-size: 30px;
-    transition: color 0.3s ease;
+    font-size: 44px;
+    color: #ffffff; /* You can adjust this to match your theme */
 }
 
 .social-icons a:hover {
-    color: #0b2130; /* Change hover color to your liking */
+    color: #4a739e; /* Change color on hover */
+}
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1); /* Slight shadow for elevation */
+    justify-content: center;
+    align-items: center;
+}
+
+.source {
+    margin-right: 10px;
+}
+
+.source p {
+    font-size: 30px;
+    margin-left: 230px;
+    margin-bottom: 120px;
+    color: #ffffff;
+    justify-content: center;
+}
+
+.source a {
+    color: #fffbfb;
+    font-size: 30px;
+    text-decoration: none;
+    margin-left: 5px;
+}
+
+.source a:hover {
+    color: #456383;
 }
