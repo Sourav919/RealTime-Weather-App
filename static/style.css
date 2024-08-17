@@ -1,0 +1,129 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url("https://images.pexels.com/photos/952670/pexels-photo-952670.jpeg?auto=compress&cs=tinysrgb&w=600");
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    color: #000000;
+    justify-content: flex-start; /* Align content to the top */
+}
+
+header {
+    text-align: center;
+    margin-top: 20px; /* Space from the top of the page */
+    border-radius: 4px;
+}
+
+header {
+    text-align: center; /* Center the text in the header */
+    padding: 20px; /* Add some padding around the header */
+    
+}
+
+header h1 {
+    font-size: 48px; /* Larger font size for prominence */
+    font-weight: 700; /* Extra bold weight */
+    margin: 0;
+    color: #ffffff; /* Dark color for better readability */
+    letter-spacing: -1px; /* Optional: Slightly tighter letter spacing */
+}
+
+header h2 {
+    font-size: 24px; /* Slightly smaller but still noticeable */
+    font-weight: 400; /* Regular weight for contrast with h1 */
+    margin: 5px 0 0; /* Small top margin for separation */
+    color: #ffffff; /* Lighter color for secondary text */
+    letter-spacing: 0.5px; /* Optional: Slightly increased letter spacing */
+}
+
+
+.content {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex: 1;
+}
+
+.wrapper {
+    display: flex;
+    gap: 20px; /* Space between the two containers */
+}
+
+.container {
+    margin-top: 129px;
+    background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.2);
+    width: 300px; /* Fixed width for the containers */
+    height: 300px; /* Fixed height for the containers */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+input {
+    margin: 10px 0;
+    padding: 10px;
+    width: calc(100% - 24px); /* Adjust width to fit inside the container */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #24526b;
+    margin-top: 50px;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #081b25;
+}
+
+.weather-output {
+    padding: 20px;
+    background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px rgba(154, 125, 172, 0.1);
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; 
+}
+
+.weather-output p {
+    margin: 10px 0;
+    color: black; /* Color for the labels */
+}
+.social-icons {
+    position: fixed; /* Fixes the container to the bottom */
+    bottom: 0; 
+    width: 100%; /* Takes full width */
+    display: flex; /* Use flexbox for alignment */
+    justify-content: center; /* Center horizontally */
+    padding: 10px 0; /* Optional: Add padding for spacing */
+    gap: 20px;
+}
+
+.social-icons a {
+    text-decoration: none;
+    color: #a6d2dd; /* Change to your preferred color */
+    font-size: 30px;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #0b2130; /* Change hover color to your liking */
+}
