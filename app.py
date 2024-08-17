@@ -24,8 +24,9 @@ def scrape_weather(city, country):
         precip_prob = soup.find("span", {"id": "wob_pp"}).text
         
         # Return the extracted weather data as a dictionary
+        
         return {
-            "temperature": (temperature-30)/2 + "°C",
+            "temperature": temperature + "°C",
             "weather_condition": weather_condition,
             "humidity": humidity,
             "wind_speed": wind_speed,

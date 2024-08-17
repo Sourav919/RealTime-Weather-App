@@ -8,58 +8,54 @@ body {
     align-items: center;
     height: 100vh;
     color: #000000;
-    justify-content: flex-start; /* Align content to the top */
+    justify-content: flex-start;
 }
 
 header {
     text-align: center;
-    margin-top: 20px; /* Space from the top of the page */
-    border-radius: 4px;
-}
-
-header {
-    text-align: center; /* Center the text in the header */
-    padding: 20px; /* Add some padding around the header */
-    
+    margin-top: 20px;
+    padding: 20px;
 }
 
 header h1 {
-    font-size: 48px; /* Larger font size for prominence */
-    font-weight: 700; /* Extra bold weight */
+    font-size: 36px;
+    font-weight: 700;
     margin: 0;
-    color: #ffffff; /* Dark color for better readability */
-    letter-spacing: -1px; /* Optional: Slightly tighter letter spacing */
+    color: #ffffff;
+    letter-spacing: -1px;
 }
 
 header h2 {
-    font-size: 24px; /* Slightly smaller but still noticeable */
-    font-weight: 400; /* Regular weight for contrast with h1 */
-    margin: 5px 0 0; /* Small top margin for separation */
-    color: #ffffff; /* Lighter color for secondary text */
-    letter-spacing: 0.5px; /* Optional: Slightly increased letter spacing */
+    font-size: 18px;
+    font-weight: 400;
+    margin: 5px 0 0;
+    color: #ffffff;
 }
-
 
 .content {
     display: flex;
     justify-content: center;
     width: 100%;
     flex: 1;
+    flex-wrap: wrap;
 }
 
 .wrapper {
     display: flex;
-    gap: 20px; /* Space between the two containers */
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    width: 100%;
 }
 
 .container {
-    margin-top: 49px;
+    margin-top: 20px;
     background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
     padding: 20px;
     border-radius: 15px;
     box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.2);
-    width: 300px; /* Fixed width for the containers */
-    height: 300px; /* Fixed height for the containers */
+    width: 100%;
+    max-width: 300px; /* Set a max-width for responsiveness */
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -69,7 +65,7 @@ header h2 {
 input {
     margin: 10px 0;
     padding: 10px;
-    width: calc(100% - 24px); /* Adjust width to fit inside the container */
+    width: calc(100% - 24px);
     border: 1px solid #ddd;
     border-radius: 8px;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
@@ -79,7 +75,7 @@ input {
 button {
     padding: 10px 20px;
     background-color: #24526b;
-    margin-top: 50px;
+    margin-top: 20px;
     color: white;
     border: none;
     border-radius: 8px;
@@ -100,58 +96,66 @@ button:hover {
     font-size: 18px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end; 
 }
 
 .weather-output p {
     margin: 10px 0;
-    color: black; /* Color for the labels */
-}
-/* Social Icons Styling */
-.social-icons {
-    margin: 20px 0; /* Add margin to create space around the icons */
-    display: flex;
-    justify-content: center; /* Center the icons horizontally */
-    gap: 20px; /* Space between icons */
+    color: black;
 }
 
-/* Optional: Customize the size of the icons */
+/* Social Icons Styling */
+.social-icons {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
 .social-icons a {
-    font-size: 44px;
-    color: #ffffff; /* You can adjust this to match your theme */
+    font-size: 24px;
+    color: #ffffff;
 }
 
 .social-icons a:hover {
-    color: #4a739e; /* Change color on hover */
-}
-footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1); /* Slight shadow for elevation */
-    justify-content: center;
-    align-items: center;
+    color: #4a739e;
 }
 
-.source {
-    margin-right: 10px;
+footer {
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 -1px 5px rgba(255, 255, 255, 0.1);
+    padding: 20px;
 }
 
 .source p {
-    font-size: 30px;
-    margin-left: 230px;
-    margin-bottom: 120px;
+    font-size: 16px;
     color: #ffffff;
-    justify-content: center;
 }
-
-.source a {
-    color: #fffbfb;
-    font-size: 30px;
-    text-decoration: none;
-    margin-left: 5px;
+.source a
+{
+     color:white
 }
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 28px;
+    }
 
-.source a:hover {
-    color: #456383;
+    header h2 {
+        font-size: 16px;
+    }
+
+    .wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container {
+        width: 100%;
+        max-width: 90%; /* Make containers take up more width on small screens */
+    }
+
+    footer {
+        font-size: 14px;
+    }
 }
