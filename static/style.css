@@ -1,5 +1,3 @@
-
-
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
@@ -73,8 +71,7 @@ header h2 {
     box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.2);
     width: 100%;
     height: 50%;
-    max-height: 300px;
-    max-width: 300px; /* Responsive adjustment */
+    max-width: 300px;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -167,6 +164,7 @@ footer {
     .wrapper {
         flex-direction: column;
         align-items: center;
+        gap: 10px; /* Add gap between containers on mobile */
     }
 
     .container {
