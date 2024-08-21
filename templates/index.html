@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Weather Application</title>
     <link rel="stylesheet" href="/static/style.css">
     <!-- Font Awesome CDN -->
@@ -47,7 +47,7 @@
                 <p><strong>Precipitation Probability:</strong> <span class="value">{{ weather_data.precip_prob }}</span></p>
 
                 <script>
-                    let weatherCondition = "{{ weather_data.weather_condition }}".toLowerCase(); // Normalize to lowercase
+                    let weatherCondition = "{{ weather_data.weather_condition }}".toLowerCase();
                     let videoElement = document.getElementById('bg-video');
                     
                     switch (true) {
@@ -92,5 +92,6 @@
             </div>
         </div>
     </div>
+
 </body>
 </html>
