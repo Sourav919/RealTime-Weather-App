@@ -174,10 +174,13 @@ footer {
     }
 
     .container {
-        max-width: 90%; /* Make containers take up more width on small screens */
+        max-width: 40%; /* Make containers take up more width on small screens */
         width: auto;
     }
-
+    .weather-output {
+        max-width: 40%; /* Make containers take up more width on small screens */
+        width: auto;
+    }
     footer {
         font-size: 14px;
     }
